@@ -1,0 +1,41 @@
+name: TimeBoundSMP
+version: 1.0.0
+main: com.timebound.TimeBoundPlugin
+api-version: '1.21'
+description: Time-based SMP plugin
+authors: [TimeBound]
+
+commands:
+  time:
+    description: Check your current time
+    usage: /time
+  checktime:
+    description: Check another player's time
+    usage: /checktime <player>
+  addtime:
+    description: Add time to a player (admin)
+    usage: /addtime <player> <minutes>
+    permission: timebound.admin
+  removetime:
+    description: Remove time from a player (admin)
+    usage: /removetime <player> <minutes>
+    permission: timebound.admin
+  settime:
+    description: Set time for a player (admin)
+    usage: /settime <player> <minutes>
+    permission: timebound.admin
+  timeleaderboard:
+    description: Show time leaderboard
+    usage: /timeleaderboard
+  timeshop:
+    description: Open the time shop
+    usage: /timeshop
+  seasonreset:
+    description: Reset all player times (admin)
+    usage: /seasonreset confirm
+    permission: timebound.admin
+
+permissions:
+  timebound.admin:
+    description: Admin access
+    default: op
