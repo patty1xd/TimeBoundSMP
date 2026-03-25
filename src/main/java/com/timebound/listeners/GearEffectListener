@@ -1,0 +1,14 @@
+package com.timebound.listeners;
+
+import com.timebound.TimeBoundPlugin;
+import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
+import org.bukkit.event.Listener;
+
+public class GearEffectListener implements Listener {
+    public GearEffectListener(TimeBoundPlugin plugin) {
+        Bukkit.getScheduler().runTaskTimer(plugin, () -> {
+            for (Player p : Bukkit.getOnlinePlayers()) plugin.getGearEffectManager().applyPassiveEffects(p);
+        }, 40L, 40L);
+    }
+}
