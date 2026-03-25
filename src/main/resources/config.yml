@@ -1,0 +1,22 @@
+starting-time: 180
+kill-reward: 30
+death-penalty: 30
+kill-cooldown: 120
+dragon-time-reward: 180
+scoreboard-update-interval: 20
+
+bounty-thresholds:
+  600: 15
+  900: 30
+  1200: 45
+
+shop:
+  starter:
+    cost: 15
+    display: "Starter Kit"
+  advanced:
+    cost: 45
+    display: "Advanced Kit"
+  warlord:
+    cost: 60
+    display: "Warlord Kit"
